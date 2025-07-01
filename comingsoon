@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orru Ceramics – Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fdf9f3;
+      color: #3e2b1c;
+      font-family: 'Georgia', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    img.logo {
+      width: 140px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+    video {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <img src="DC608F5D-A845-4B5B-9A44-A03A8B8537B5.PNG" alt="Orru Logo" class="logo">
+  <h1>Orru Ceramics</h1>
+  <p>Organic, timeless, and soon to be available. Our small-batch handcrafted ceramic collection is almost here.</p>
+  <video autoplay muted loop playsinline>
+    <source src="download.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
