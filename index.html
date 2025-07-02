@@ -1,1 +1,89 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orru Ceramics – Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      color: #3e2b1c;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+    }
+
+    .header-bar {
+      width: 100%;
+      background: #EDE5D7;
+      padding: 0;
+      margin: 0;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .main-content {
+      padding-top: 220px; /* 200px header + 20px spacing */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img.logo {
+      width: 160px;
+      margin: 14px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin-bottom: 32px;
+      padding: 0 20px;
+    }
+
+    video {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      img.logo {
+        width: 90px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <img src="DC608F5D-A845-4B5B-9A44-A03A8B8537B5.PNG" alt="Orru Logo" class="logo">
+  </div>
+
+  <div class="main-content">
+    <h1>Orru Studios</h1>
+    <p><i><b>coming soon</b></i> - currently documenting and cooking up a small-batch, handcrafted ceramic collection</p>
+    <video autoplay muted loop playsinline>
+      <source src="download.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
