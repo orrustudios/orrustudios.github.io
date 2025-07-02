@@ -10,83 +10,56 @@
       background-color: #ffffff;
       color: #3e2b1c;
       font-family: 'Courier New', monospace;
+      text-align: center;
+    }
+
+    .header-bar {
+      width: 100%;
+      background: #EDE5D7;
+      padding: 0;
+      margin: 0;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .main-content {
+      padding-top: 220px; /* 200px header + 20px spacing */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
     }
-    .header-bar {
-      width: 100vw;
-      background: #EBE2D2; /* matches the logo's background */
-      padding: 0;
-      margin: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 200px;
-      align-items: center;
-      justify-content: flex-end;
-      z-index: 10;
-    }
-    .header-bar nav {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      height: 100%;
-      padding: 0 32px;
-    }
-    .header-bar a {
-      color: #3e2b1c;
-      text-decoration: none;
-      font-size: 1rem;
-      margin-left: 32px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 8px;
-      font-weight: 500;  
-      font-family: 'Georgia', serif;
-      transition: color 0.2s;
-    }
-    .header-bar a:hover {
-      color: #a67c52;
-    }
-    /* Add padding to body to prevent content under header */
-    body {
-      padding-top: 56px;
-    }
+
     img.logo {
-      width: 140px;
-      margin: 24px;
+      width: 160px;
+      margin: 14px;
     }
+
     h1 {
       font-size: 2.2rem;
       margin-bottom: 16px;
     }
+
     p {
       font-size: 1.1rem;
       max-width: 500px;
       margin-bottom: 32px;
+      padding: 0 20px;
     }
+
     video {
       max-width: 90%;
       height: auto;
       border-radius: 8px;
-      /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */ /* Removed shadow */
     }
+
     @media (max-width: 600px) {
-      .header-bar nav {
-        padding: 0 10px;
-      }
-      .header-bar a {
-        margin-left: 16px;
-        font-size: 0.98rem;
-      }
       img.logo {
         width: 90px;
       }
@@ -101,13 +74,16 @@
 </head>
 <body>
   <div class="header-bar">
-      <img src="DC608F5D-A845-4B5B-9A44-A03A8B8537B5.PNG" alt="Orru Logo" class="logo">
+    <img src="DC608F5D-A845-4B5B-9A44-A03A8B8537B5.PNG" alt="Orru Logo" class="logo">
   </div>
-  <h1>Orru Studios</h1>
-  <p><i><b>coming soon</b></i> - currently documenting and cooking up a small-batch, handcrafted ceramic collection</p>
-  <video autoplay muted loop playsinline>
-    <source src="download.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+  <div class="main-content">
+    <h1>Orru Studios</h1>
+    <p><i><b>coming soon</b></i> - currently documenting and cooking up a small-batch, handcrafted ceramic collection</p>
+    <video autoplay muted loop playsinline>
+      <source src="download.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </body>
 </html>
